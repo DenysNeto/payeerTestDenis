@@ -68,9 +68,13 @@ let arr =  Object.values(example) ;
                    <input type="hidden" name="m_curr" value="${example.m_curr}">
                        <input type="hidden" name="m_desc" value="${example.m_desc}">
                            <input type="hidden" name="m_sign" value="${example.m_sign}">
-                               <input type="submit" name="m_process" value="sendTestRequest" />
+                               <button id="send" type="submit" name="m_process" value="sendTestRequest">SEND</button>
                            </form>`);
    });
+    
+    
+let btn  =  document.getElementById("send");
+       btn && btn.click();
 
 
     </script>
